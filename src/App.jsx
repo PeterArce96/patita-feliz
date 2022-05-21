@@ -1,4 +1,5 @@
 import './App.css';
+import AppointmentsForm from './components/appointments/AppointmentsForm';
 import Header from './components/sections/Header';
 
 function App() {
@@ -8,9 +9,18 @@ function App() {
   }
 
   return (
-    <Header
-      company = {company}
-    />
+    <>
+      <Header
+        company = {company}
+      />
+      <main className="py-3">
+        <section className="container">
+          <div className="row">
+            <AppointmentsForm/>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
 
