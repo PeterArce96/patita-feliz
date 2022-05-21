@@ -1,14 +1,9 @@
-html {
-  min-height: 100%;
-  --gold: #ffd700;
-  --text-color: #ffffff;
-}
 
 .body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+  background: linear-gradient(90deg, rgba(0,195,255,1) 0%, rgba(0,73,163,1) 52%, rgba(11,0,105,1) 100%);
   min-height: 100%;
 }
 
@@ -19,6 +14,11 @@ html {
 
 .header__name {
   color: var(--gold);
+}
+
+.header__slogan{
+  text-transform: none;
+  font-size: 0.75rem;
 }
 
 h1, h2, h3 {
