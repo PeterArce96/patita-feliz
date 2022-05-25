@@ -55,7 +55,7 @@ const AppointmentsForm = ({ appointment, submitAppointmentsForm }) => {
 
     return (
         <section className="d-flex flex-column gap-3 col-md-4">
-        <h3 className="text-light text-center m-0" id="formTitle">🐱{appointment._id ? 'Editar' : 'Crear'} cita🐱</h3>
+        <h3 className="text-light text-center m-0" id="formTitle">🐱 {appointment._id ? 'Editar' : 'Crear'} cita 🐱</h3>
         <form
             className="text-dark rounded"
             onSubmit={handleSubmit}
@@ -77,7 +77,7 @@ const AppointmentsForm = ({ appointment, submitAppointmentsForm }) => {
                 type="text"
                 name="mascota"
                 placeholder="Nombre de la Mascota"
-                className="form-control"
+                className="form-control border-2 border-info"
                 value={mascota}
                 onChange={handleChange}
                 required
@@ -90,7 +90,7 @@ const AppointmentsForm = ({ appointment, submitAppointmentsForm }) => {
                 type="text"
                 name="propietario"
                 placeholder="Nombre del propietario"
-                className="form-control"
+                className="form-control border-2 border-info"
                 value={propietario}
                 onChange={handleChange}
                 required
@@ -103,7 +103,7 @@ const AppointmentsForm = ({ appointment, submitAppointmentsForm }) => {
                 type="date"
                 name="fecha"
                 placeholder="Fecha"
-                className="form-control"
+                className="form-control border-2 border-info"
                 value={fecha}
                 onChange={handleChange}
                 required
@@ -116,7 +116,7 @@ const AppointmentsForm = ({ appointment, submitAppointmentsForm }) => {
                 type="time"
                 name="hora"
                 placeholder="Hora"
-                className="form-control"
+                className="form-control border-2 border-info"
                 value={hora}
                 onChange={handleChange}
                 required
@@ -129,18 +129,17 @@ const AppointmentsForm = ({ appointment, submitAppointmentsForm }) => {
                 type="text"
                 name="sintomas"
                 placeholder="Síntomas"
-                className="form-control"
+                className="form-control border-2 border-info"
                 value={sintomas}
                 onChange={handleChange}
                 required
             />
-            <label htmlFor="sintomas" className="text-dark">Síntomas</label>
+            <label htmlFor="sintomas" className="text-dark ">Síntomas</label>
             </div>
             <button
             type="submit"
             className="btn btn-info w-100 fw-bold"
-            >
-            {appointment._id ? 'Editar' : 'Crear'}
+            >✨ {appointment._id ? 'Editar' : 'Crear'} ✨
             </button>
         </form>
         {
