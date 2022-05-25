@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const AppointmentsForm = ({ createAppointment }) => {
+const AppointmentsForm = ({ appointment, submitAppointmentsForm }) => {
 
     const [formAppointment, setFormAppointment] = useState({
+        _id: '',
         mascota: '',
         propietario: '',
         fecha: '',
@@ -25,8 +26,9 @@ const AppointmentsForm = ({ createAppointment }) => {
         if ([mascota.trim(), propietario.trim(), fecha.trim(), hora.trim(), sintomas.trim()].includes('')) {
         setAlert(true);
         } else {
-        createAppointment(formAppointment);
+        submitAppointmentsForm(formAppointment);
         setFormAppointment({
+            _id: '',
             mascota: '',
             propietario: '',
             fecha: '',
@@ -37,11 +39,25 @@ const AppointmentsForm = ({ createAppointment }) => {
         }
     };
 
+    useEffect(() => {
+        if (appointment._id) {
+        const { _id, mascota, propietario, fecha, hora, sintomas } = appointment;
+        setFormAppointment({
+            _id,
+            mascota,
+            propietario,
+            fecha,
+            hora,
+            sintomas
+        });
+        }
+    }, [appointment]);
+
     return (
-        <section className="d-flex flex-column col-md-4">
-        <h3 className="text-center" id="formTitle">😸 Generar Cita 😸</h3>
+        <section className="d-flex flex-column gap-3 col-md-4">
+        <h3 className="text-light text-center m-0" id="formTitle">🐱{appointment._id ? 'Editar' : 'Crear'} cita🐱</h3>
         <form
-            className="text-dark rounded p-4"
+            className="text-dark rounded"
             onSubmit={handleSubmit}
         >
             <div className="text-dark form-floating mb-3" style={{ display: "none" }}>
@@ -122,9 +138,9 @@ const AppointmentsForm = ({ createAppointment }) => {
             </div>
             <button
             type="submit"
-            className="btn btn-warning w-100"
+            className="btn btn-primary w-100"
             >
-            🙀 Crear Cita 🙀
+            {appointment._id ? 'Editar' : 'Crear'}
             </button>
         </form>
         {
@@ -132,6 +148,6 @@ const AppointmentsForm = ({ createAppointment }) => {
         }
         </section>
     );
-}
+    }
 
 export default AppointmentsForm;
