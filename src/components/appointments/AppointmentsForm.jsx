@@ -138,7 +138,7 @@ const AppointmentsForm = ({ appointment, submitAppointmentsForm }) => {
             </div>
             <button
             type="submit"
-            className="btn btn-primary w-100"
+            className="btn btn-info w-100 fw-bold"
             >
             {appointment._id ? 'Editar' : 'Crear'}
             </button>
@@ -148,6 +148,6 @@ const AppointmentsForm = ({ appointment, submitAppointmentsForm }) => {
         }
         </section>
     );
-    }
+}
 
 export default AppointmentsForm;

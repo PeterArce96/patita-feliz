@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+<!-- html y markdown -->
+<!-- # h1, ##h2 ,... -->
+<!-- entre corchetes []: contenido, entre paréntesis () el link del proyecto -->
+# [Patita Feliz R](https://patita-feliz-r.netlify.app) | [<img src="https://i.postimg.cc/J7BLFtdc/linkedin.png" alt="Linkedin" height = "20px"/>](https://www.linkedin.com/in/peter-joseph-arce-guill%C3%A9n-757042225/) | [<img src="https://i.postimg.cc/sfJtqS4W/instagram.png" alt="Linkedin" height = "20px"/>](https://www.linkedin.com/in/peter-joseph-arce-guill%C3%A9n-757042225/) | [<img src="https://i.postimg.cc/7YHyZXZX/facebook.png" alt="Linkedin" height = "20px"/>](https://www.linkedin.com/in/peter-joseph-arce-guill%C3%A9n-757042225/) | [<img src="https://i.postimg.cc/5NBMxTJX/github.png" alt="Linkedin" height = "20px"/>](https://www.linkedin.com/in/peter-joseph-arce-guill%C3%A9n-757042225/) | [<img src="https://i.postimg.cc/dtPYcvbM/youtube.png" alt="Linkedin" height = "20px"/>](https://www.linkedin.com/in/peter-joseph-arce-guill%C3%A9n-757042225/) | [<img src="https://i.postimg.cc/65TVxg9t/world-globe.png" alt="Linkedin" height = "20px"/>](https://www.linkedin.com/in/peter-joseph-arce-guill%C3%A9n-757042225/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- ! signo de exclamación para imagen -->
+[![Patita Feliz R](https://i.postimg.cc/gJtMnC05/patita-feliz-r.png)](https://patita-feliz-r.netlify.app)
 
-## Available Scripts
+## 📃 Resumen 📃
+Aplicación web donde puedes administrar citas mediante un CRUD y podrás confirmarlas.
 
-In the project directory, you can run:
+## 💻 Instalación 💻
+- Ubicarse en la carpeta que contendrá el proyecto
+- Abrir terminal de comandos
+  - git clone https://github.com/ElliotXLeo/pancito-feliz-r
+  - cd pancito-feliz-r
+  - npm install
+  - npm start
+    - Levanta un servidor con la aplicación
+  - npm run build
+    - Genera un paquete para el despliegue en producción
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👨‍💻 Tecnologías usadas 👨‍💻 
+<table>
+    <thead>
+      <tr>
+        <th>React</th>
+        <th>HTML</th>
+        <th>CSS</th>
+        <th>JavaScript</th>
+        <th>Bootstrap</th>
+        <th>SweetAler2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" width="100%" />
+        </td>
+        <td>
+          <img src="https://i.postimg.cc/rF6WrLjr/html.png" width="100%" />
+        </td>
+        <td>
+          <img src="https://i.postimg.cc/mgSDG9F2/css.png" width="100%" />
+        </td>
+        <td>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" width="100%" />
+        </td>
+        <td>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+            width="100%" />
+        </td>
+        <td>
+          <img
+            src="https://sweetalert2.github.io/images/SweetAlert2.png" width="100%" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
